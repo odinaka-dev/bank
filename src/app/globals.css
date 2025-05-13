@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    --background: 0 0% 94.1%; /* Light gray #F0F0F0 */
-    --foreground: 215 25% 27%; /* Dark blue-gray */
+    --background: 0 0% 100%; /* Light gray #F0F0F0 */
+    --foreground: 0 0% 3.9%; /* Dark blue-gray */
 
-    --muted: 220 16% 90%; /* Lighter gray for muted elements */
-    --muted-foreground: 215 15% 50%; /* Lighter text for muted elements */
+    --muted: 0 0% 96.1%; /* Lighter gray for muted elements */
+    --muted-foreground: 0 0% 45.1%; /* Lighter text for muted elements */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 0 0% 3.9%;
 
     --card: 0 0% 100%; /* White for cards */
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 0 0% 3.9%;
 
-    --border: 215 20% 85%; /* Light blue-gray border */
-    --input: 0 0% 100%; /* White input background, can adjust if needed */
+    --border: 0 0% 89.8%; /* Light blue-gray border */
+    --input: 0 0% 89.8%; /* White input background, can adjust if needed */
 
-    --primary: 215 100% 28%; /* Deep blue #00308F */
+    --primary: 0 0% 9%; /* Deep blue #00308F */
     --primary-foreground: 0 0% 98%; /* White/very light gray */
 
-    --secondary: 220 16% 90%; /* Lighter gray */
-    --secondary-foreground: 215 30% 35%; /* Darker text for secondary elements */
+    --secondary: 0 0% 96.1%; /* Lighter gray */
+    --secondary-foreground: 0 0% 9%; /* Darker text for secondary elements */
 
-    --accent: 180 100% 25%; /* Teal #008080 */
-    --accent-foreground: 0 0% 98%; /* White/very light gray */
+    --accent: 0 0% 96.1%; /* Teal #008080 */
+    --accent-foreground: 0 0% 9%; /* White/very light gray */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --ring: 180 80% 45%; /* Accent color for rings */
+    --ring: 0 0% 3.9%; /* Accent color for rings */
 
     --radius: 0.5rem;
 
@@ -46,58 +46,58 @@
     --sidebar-ring: 180 80% 45%; /* Teal ring for focus */
 
     /* Chart colors - can be adjusted to fit the new theme */
-    --chart-1: 215 70% 50%; /* Shades of blue */
-    --chart-2: 180 70% 40%; /* Shades of teal */
-    --chart-3: 200 60% 45%; 
-    --chart-4: 210 65% 55%;
-    --chart-5: 190 75% 45%;
+    --chart-1: 12 76% 61%; /* Shades of blue */
+    --chart-2: 173 58% 39%; /* Shades of teal */
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
 
   .dark {
-    --background: 220 15% 10%;
-    --foreground: 0 0% 90%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
 
-    --popover: 220 15% 12%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    --card: 220 15% 15%;
-    --card-foreground: 0 0% 90%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
 
-    --primary: 215 80% 60%; /* Lighter blue */
-    --primary-foreground: 215 20% 15%; 
+    --primary: 0 0% 98%; /* Lighter blue */
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 220 15% 25%;
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
 
-    --accent: 180 70% 55%; /* Lighter teal */
-    --accent-foreground: 180 100% 10%;
+    --accent: 0 0% 14.9%; /* Lighter teal */
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 70% 50%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --ring: 180 70% 55%;
+    --ring: 0 0% 83.1%;
 
     /* Dark Sidebar specific colors */
-    --sidebar-background: 220 25% 12%; 
+    --sidebar-background: 220 25% 12%;
     --sidebar-foreground: 0 0% 92%;
     --sidebar-border: 220 20% 18%;
-    --sidebar-primary: 180 70% 55%; 
+    --sidebar-primary: 180 70% 55%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 220 25% 22%; 
+    --sidebar-accent: 220 25% 22%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-ring: 180 70% 55%;
 
-    --chart-1: 215 70% 60%;
-    --chart-2: 180 70% 50%;
-    --chart-3: 200 60% 55%;
-    --chart-4: 210 65% 65%;
-    --chart-5: 190 75% 55%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
@@ -108,5 +108,14 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: var(--font-geist-sans);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

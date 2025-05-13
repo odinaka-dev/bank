@@ -28,6 +28,8 @@ import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 
 const menuItems = [
+  { href: "/", label: "home", icon: LayoutGrid },
+  { href: "/account", label: "Account", icon: LayoutGrid },
   { href: "/dashboard", label: "Dashboard", icon: LayoutGrid },
   { href: "/transactions", label: "Transactions", icon: List },
   { href: "/transfer", label: "Transfer Funds", icon: ArrowRightLeft },
@@ -42,10 +44,9 @@ export function UserNav() {
   return (
     <>
       <SidebarGroup className="sticky top-0 z-10 bg-sidebar pt-3 pb-2">
-        <Logo className={cn(
-            "text-sidebar-foreground ml-1",
-            !open && "hidden"
-            )} />
+        <Logo
+          className={cn("text-sidebar-foreground ml-1", !open && "hidden")}
+        />
       </SidebarGroup>
       <SidebarMenu className="flex-1">
         {menuItems.map((item) => (
@@ -53,7 +54,10 @@ export function UserNav() {
             <Link href={item.href} legacyBehavior passHref>
               <SidebarMenuButton
                 isActive={pathname === item.href}
-                tooltip={{ children: item.label, className: "text-xs px-2 py-1" }}
+                tooltip={{
+                  children: item.label,
+                  className: "text-xs px-2 py-1",
+                }}
                 className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-primary data-[active=true]:text-sidebar-primary-foreground"
               >
                 <item.icon className="h-5 w-5" />
@@ -65,24 +69,27 @@ export function UserNav() {
       </SidebarMenu>
 
       <SidebarGroup className="sticky bottom-0 pb-2 mt-auto bg-sidebar">
-         <SidebarMenu>
+        <SidebarMenu>
           <SidebarMenuItem>
-             <Link href="#" legacyBehavior passHref>
-              <SidebarMenuButton 
+            <Link href="#" legacyBehavior passHref>
+              <SidebarMenuButton
                 className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
-                tooltip={{ children: "Settings", className: "text-xs px-2 py-1" }}
-                >
+                tooltip={{
+                  children: "Settings",
+                  className: "text-xs px-2 py-1",
+                }}
+              >
                 <Settings className="h-5 w-5" />
                 <span className={cn(!open && "hidden")}>Settings</span>
               </SidebarMenuButton>
             </Link>
           </SidebarMenuItem>
-           <SidebarMenuItem>
-             <Link href="#" legacyBehavior passHref>
-              <SidebarMenuButton 
+          <SidebarMenuItem>
+            <Link href="#" legacyBehavior passHref>
+              <SidebarMenuButton
                 className="text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
                 tooltip={{ children: "Help", className: "text-xs px-2 py-1" }}
-                >
+              >
                 <HelpCircle className="h-5 w-5" />
                 <span className={cn(!open && "hidden")}>Help</span>
               </SidebarMenuButton>

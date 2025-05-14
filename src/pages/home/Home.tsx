@@ -37,42 +37,13 @@ const Home = () => {
   );
 };
 
-// navigation components
-// const Navigation = () => {
-//   return (
-//     <nav className="py-4 px-4 border-b border-opacity-30">
-//       <div className="max-w-[90%] mx-auto flex justify-between items-center">
-//         <div className="text-blue-950 flex gap-2 items-center text-3xl">
-//           <BiLogoDigitalocean />
-//           <h1>Unionly</h1>
-//         </div>
-//         <div className="">
-//           <ul className="flex gap-8 items-center">
-//             <li className="hover:text-blue-950 hover:font-semibold duration-200 cursor-pointer">
-//               Home
-//             </li>
-//             <li className="hover:text-blue-950 hover:font-semibold duration-200 cursor-pointer">
-//               About
-//             </li>
-//             <Link href={"/register"}>
-//               <li className="text-white bg-blue-950 py-2 px-6 rounded-md cursor-pointer hover:opacity-80 duration-300">
-//                 Get started
-//               </li>
-//             </Link>
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
 // Homepge Banner
 const HomeBanner = () => {
   return (
     <div className="bg-blue-800 text-white">
       <div className="max-w-[80%] mx-auto pt-12 flex flex-col md:flex-row items-center">
         <div className="hidden sm:flex flex-1">
-          <Image src={FintechImage2} alt="" className="" />
+          <Image src={FintechImage} alt="" className="w-[4000px]" />
         </div>
         <div className="flex-1">
           <h1 className="font-medium capitalize my-3 text-5xl text-center">

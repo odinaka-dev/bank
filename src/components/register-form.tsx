@@ -17,7 +17,15 @@ export function RegisterForm({
       </div>
       <div className="grid gap-6">
         <div className="grid gap-3">
-          <Label htmlFor="text">Name</Label>
+          <Label htmlFor="text">First Name</Label>
+          <Input id="text" type="name" placeholder="John Doe" required />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Last Name</Label>
+          <Input id="text" type="name" placeholder="John Doe" required />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Preferred UserName</Label>
           <Input id="text" type="name" placeholder="John Doe" required />
         </div>
         <div className="grid gap-3">
@@ -34,6 +42,31 @@ export function RegisterForm({
           </div>
           <Input id="password" type="password" required />
         </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Nationality</Label>
+          <Input id="text" type="name" placeholder="United states" required />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Phone Number</Label>
+          <Input id="text" type="name" placeholder="+(---)" required />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Accout Type</Label>
+          <Input
+            id="text"
+            type="name"
+            placeholder="savings or Current"
+            required
+          />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Employment status</Label>
+          <Input id="text" type="name" placeholder="Employed or not" required />
+        </div>
+        <div className="grid gap-3">
+          <Label htmlFor="text">Gross Monthly Income</Label>
+          <Input id="text" type="name" placeholder="$1000000" required />
+        </div>
         <Button type="submit" className="w-full bg-blue-950">
           Create user account
         </Button>
@@ -42,7 +75,7 @@ export function RegisterForm({
             Or continue with
           </span>
         </div>
-        <Button variant="outline" className="w-full">
+        {/* <Button variant="outline" className="w-full">
           <svg
             width="64px"
             height="64px"
@@ -77,7 +110,7 @@ export function RegisterForm({
             </g>
           </svg>
           create user account with Google
-        </Button>
+        </Button> */}
       </div>
       <div className="text-center text-sm">
         Have an existing account?{" "}

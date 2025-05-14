@@ -235,9 +235,7 @@ const Verification = () => (
       <RiVerifiedBadgeFill />
     </div>
     <h2 className="text-xl font-semibold">All steps completed</h2>
-    <p className="text-sm text-gray-600">
-      You're ready to access your dashboard.
-    </p>
+    <p className="text-sm text-gray-600">successfully created your Account</p>
     <Link href="/dashboard">
       <Button className="bg-blue-950 w-full">Go to Dashboard</Button>
     </Link>

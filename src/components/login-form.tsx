@@ -127,9 +127,8 @@ export function LoginForm({
         setError(data.error || 'Login failed');
         return;
       }
-
-      // Store the token (e.g., in localStorage or cookies)
-      localStorage.setItem('token', data.token);
+      // Store the token (e.g., in localStorage or cookies or sessionStorage (most preferred))
+      sessionStorage.setItem('token', data.token);
 
       // Redirect to dashboard or homepage
       router.push('/dashboard'); // adjust as needed

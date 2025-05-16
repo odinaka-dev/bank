@@ -128,7 +128,7 @@ export function LoginForm({
         return;
       }
       // Store the token (e.g., in localStorage or cookies or sessionStorage (most preferred))
-      sessionStorage.setItem('token', data.token);
+      localStorage.setItem('token', data.token);
 
       // Redirect to dashboard or homepage
       router.push('/dashboard'); // adjust as needed

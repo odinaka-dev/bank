@@ -157,7 +157,7 @@ export default function DashboardPage() {
       }
 
       try {
-        const res = await fetch("https://unionly-server.onrender.com/api/auth/dashboard", {
+        const res = await fetch("https://unionly-server.onrender.com/api/auth/user-dashboard", {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,

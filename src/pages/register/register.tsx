@@ -1,3 +1,5 @@
+"use client";
+
 import FintechImagge from "@/assets/img/fintech.avif";
 import Image from "next/image";
 import { RegisterForm } from "@/components/register-form";

@@ -1,3 +1,10 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+// import { signIn } from "next-auth/react";
+import axios from "axios";
+
 import { cn } from "../lib/utils";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -7,8 +14,38 @@ export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"form">) {
+  // login state
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+  const [error, setError] = useState("");
+
+  // login functionality
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+
+    try {
+      const res = await axios.post(
+        "https://unionly-server.onrender.com/api/auth/login",
+        { email, password }
+      );
+
+      const token = res.data.token;
+      localStorage.setItem("token", token);
+
+      router.push("/dashboard");
+    } catch (err: any) {
+      setError(err.response?.data?.message || "Login failed");
+    }
+  };
+
   return (
-    <form className={cn("flex flex-col gap-6", className)} {...props}>
+    <form
+      className={cn("flex flex-col gap-6", className)}
+      onSubmit={handleLogin}
+      {...props}
+    >
       <div className="flex flex-col items-center gap-2 text-center">
         <h1 className="text-2xl font-bold text-blue-900">
           Login to your account
@@ -20,7 +57,14 @@ export function LoginForm({
       <div className="grid gap-6">
         <div className="grid gap-3">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" required />
+          <Input
+            id="email"
+            type="email"
+            placeholder="m@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
         <div className="grid gap-3">
           <div className="flex items-center">
@@ -32,8 +76,15 @@ export function LoginForm({
               Forgot your password?
             </a>
           </div>
-          <Input id="password" type="password" required />
+          <Input
+            id="password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
         </div>
+        {error && <p className="text-red-500 mb-4">{error}</p>}
         <Button type="submit" className="w-full bg-blue-900">
           Login
         </Button>
@@ -42,7 +93,7 @@ export function LoginForm({
             Or continue with
           </span>
         </div>
-        <Button variant="outline" className="w-full">
+        {/* <Button variant="outline" className="w-full">
           <svg
             width="64px"
             height="64px"
@@ -77,7 +128,7 @@ export function LoginForm({
             </g>
           </svg>
           Login with Google
-        </Button>
+        </Button> */}
       </div>
       <div className="text-center text-sm">
         Don&apos;t have an account?{" "}

@@ -28,8 +28,6 @@ import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 
 const menuItems = [
-  { href: "/", label: "home", icon: LayoutGrid },
-  { href: "/account", label: "Account", icon: LayoutGrid },
   { href: "/dashboard", label: "Dashboard", icon: LayoutGrid },
   { href: "/transactions", label: "Transactions", icon: List },
   { href: "/transfer", label: "Transfer Funds", icon: ArrowRightLeft },

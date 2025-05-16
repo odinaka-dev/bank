@@ -40,7 +40,7 @@ const Home = () => {
 // Homepge Banner
 const HomeBanner = () => {
   return (
-    <div className="bg-blue-800 text-white">
+    <div className="bg-blue-800 text-white py-12">
       <div className="max-w-[80%] mx-auto pt-12 flex flex-col md:flex-row items-center">
         <div className="hidden sm:flex flex-1">
           <Image src={FintechImage} alt="" className="w-[4000px]" />

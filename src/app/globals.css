@@ -36,14 +36,14 @@
     --radius: 0.5rem;
 
     /* Sidebar specific colors */
-    --sidebar-background: 220 45% 18%; /* Dark slate blue */
-    --sidebar-foreground: 0 0% 95%; /* Off-white text */
-    --sidebar-border: 220 40% 25%;
-    --sidebar-primary: 180 100% 30%; /* Teal for active/important items */
+    --sidebar-background: 0 0% 98%; /* Dark slate blue */
+    --sidebar-foreground: 240 5.3% 26.1%; /* Off-white text */
+    --sidebar-border: 220 13% 91%;
+    --sidebar-primary: 240 5.9% 10%; /* Teal for active/important items */
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 220 40% 28%; /* Hover color for sidebar items */
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-ring: 180 80% 45%; /* Teal ring for focus */
+    --sidebar-accent: 240 4.8% 95.9%; /* Hover color for sidebar items */
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-ring: 217.2 91.2% 59.8%; /* Teal ring for focus */
 
     /* Chart colors - can be adjusted to fit the new theme */
     --chart-1: 12 76% 61%; /* Shades of blue */
@@ -84,14 +84,14 @@
     --ring: 0 0% 83.1%;
 
     /* Dark Sidebar specific colors */
-    --sidebar-background: 220 25% 12%;
-    --sidebar-foreground: 0 0% 92%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-primary: 180 70% 55%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 220 25% 22%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-ring: 180 70% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
